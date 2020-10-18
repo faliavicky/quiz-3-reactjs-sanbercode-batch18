@@ -1,0 +1,141 @@
+/* Form */
+
+input[type=text], input[type=number], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+label.error {
+    color: #E53935;
+    font-weight: bold;
+    font-size: medium;
+}
+
+button[type=submit] {
+    background-color: #07689f;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    float: right;
+}
+
+button.buttonBlue {
+    background-color: #07689f;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    float: right;
+}
+
+button.buttonRed {
+    background-color: #f85f73;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=submit]:hover {
+    background-color: #a2d5f2;
+}
+
+.container {
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+div.cari {
+    margin: 0 auto;
+    display: flex;
+    width: 50%;
+}
+
+div.cari input {
+    width: 50%;
+}
+
+div.cari button {
+    width: 30%;
+    background-color: #f85f73;
+    border-radius: 10px;
+}
+
+div.alert {
+    text-align: center;
+    color: red;
+    font-size: larger;
+    font-weight: bold;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+/* Tables */
+
+.tabelstyles {
+    font-family: 'Times New Roman', Times, serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+.tabelstyles td, .tabelstyles th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.tabelstyles tr:nth-child(even) {
+    background-color: #fafafa;
+}
+
+.tabelstyles tr:hover {
+    background-color: #ddd;
+}
+
+.tabelstyles th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #07689f;
+    color: white;
+}
